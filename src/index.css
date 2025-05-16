@@ -1,3 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Capriola;
+  src: url(assets/fonts/Capriola-Regular.ttf);
+}
+
+@theme{
+  --font-capriola: Capriola "sans-serif";
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
