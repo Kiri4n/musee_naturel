@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+.nav-card{
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10), 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, -2px -2px 8px 0px rgba(0, 0, 0, 0.15) inset;
+    @apply
+    self-stretch
+    p-6
+    bg-white/30
+    rounded-xl
+    backdrop-blur-md
+    inline-flex
+    flex-col
+    justify-start
+    items-center;
+}
+
+.nav-card__title-container {
+    @apply
+    self-stretch
+    inline-flex
+    flex-col
+    justify-center
+    items-center;
+}
+
+.title-container__fade-title{
+    @apply
+    self-stretch
+    text-center
+    justify-start
+    text-6xl
+    font-normal
+    font-['Capriola']
+    uppercase
+    bg-gradient-to-b from-black/10 from-0% to-black/0 to-80%
+    text-transparent
+    bg-clip-text;
+}
+
+.title-container__title{
+    @apply
+    self-stretch
+    text-center
+    justify-start
+    text-gray-800/50
+    text-4xl
+    font-normal
+    font-['Capriola']
+    uppercase
+    -mt-8
+    z-10;
+}
+
+.nav-card__img{
+    @apply
+    w-[358px]
+    absolute;
+}
+
+.nav-card__bg-icon{
+    fill-opacity: 0.25;
+    fill: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

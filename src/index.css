@@ -7,6 +7,18 @@
 
 @theme{
   --font-capriola: Capriola "sans-serif";
+
+  --color-title: #1A2E3380;
+}
+
+h1 {
+  @apply
+  text-title
+  text-5xl
+  font-normal
+  font-['Capriola']
+  uppercase
+  tracking-[12.44px];
 }
 
 :root {
@@ -24,6 +36,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -35,15 +54,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding: 24px 128px;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -76,4 +89,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+html, body, #root {
+  height: 100%;
 }
