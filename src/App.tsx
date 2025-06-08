@@ -10,6 +10,8 @@ import ImgWooman from './assets/img/AdobeStock_1164303902.png'
 
 import LanguageSelection from "./components/LanguageSelection/LanguageSelection.tsx"
 
+import Navigation from "./components/Navigation/Navigation.tsx";
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
             <NavCard title="Carte" bgIcon={SvgMap} idBgIcon="svg-map" mainImg={ImgWooman} mainImgPosition={{ maxWidth: '476px', left: '-148px', bottom: '0'}} />
         </main>
         <footer>
+            <Navigation display={"none"}/>
             <LanguageSelection />
         </footer>
     </>

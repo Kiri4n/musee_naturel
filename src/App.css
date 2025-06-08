@@ -29,11 +29,10 @@ main {
 }
 
 footer {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  border-radius: 100px;
   @apply
-  h-24
-  flex;
+  self-stretch
+  inline-flex
+  justify-center
+  items-center
+  gap-12;
 }
