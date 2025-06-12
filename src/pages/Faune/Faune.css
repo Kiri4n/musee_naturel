@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+main {
+    @apply
+    self-stretch
+    self-stretch
+    inline-flex
+    justify-start
+    items-center
+    gap-6;
+}
+
+.page-navigation-container {
+    @apply
+    self-stretch
+    p-6
+    bg-white/30
+    rounded-xl
+    shadow-[4px_4px_4px_0px_rgba(0,0,0,0.10)]
+    shadow-[inset_-2px_-2px_8px_0px_rgba(0,0,0,0.15)]
+    shadow-[inset_2px_2px_4px_0px_rgba(255,255,255,0.25)]
+    backdrop-blur-md
+    inline-flex
+    flex-col
+    justify-start
+    items-center
+    overflow-hidden;
+}
+
+.main-container{
+    @apply
+    self-stretch
+    self-stretch
+    bg-white/30
+    rounded-xl
+    shadow-[4px_4px_4px_0px_rgba(0,0,0,0.10)]
+    shadow-[inset_-2px_-2px_8px_0px_rgba(0,0,0,0.15)]
+    shadow-[inset_2px_2px_4px_0px_rgba(255,255,255,0.25)]
+    backdrop-blur-md
+    inline-flex
+    items-start
+    overflow-hidden
+    p-6;
+}
+
+.main-container__text{
+    width: 50%;
+    @apply
+    self-stretch
+    inline-flex
+    flex-col
+    justify-start
+    items-start
+    gap-12;
+}
+
+.faune__main-container__image{
+    height: 100%;
+    z-index: 1;
+    right: -200px;
+    @apply
+    top-0
+    absolute
+    origin-top-left;
+}
