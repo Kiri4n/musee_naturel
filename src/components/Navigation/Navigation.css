@@ -16,15 +16,15 @@
     gap-6;
 }
 
-.navigation__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none; /* ou autre style */
-    border: none;     /* selon ton design */
-}
+/*.navigation__button {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    background: none; !* ou autre style *!*/
+/*    border: none;     !* selon ton design *!*/
+/*}*/
 
-.navigation__button img {
+.navigation__button {
     width: 48px;   /* ajuste à ta convenance */
     height: 48px;
     display: block;  /* évite les espaces indésirables autour */
