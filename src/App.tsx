@@ -11,16 +11,26 @@ import ImgWooman from './assets/img/AdobeStock_1164303902.png'
 import LanguageSelection from "./components/LanguageSelection/LanguageSelection.tsx"
 
 import Navigation from "./components/Navigation/Navigation.tsx";
+import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
+
 
 
 function App() {
+    const { t } = useTranslation();
   return (
     <>
-        <h1>Faites une petite pause</h1>
+        <h1>{t("home-title")}</h1>
         <main>
-            <NavCard title="Faune" bgIcon={SvgBoar} idBgIcon="svg-boar" mainImg={ImgMousse} mainImgPosition={{ maxWidth: '358px', left: '-79px', bottom: '0'}} />
-            <NavCard title="Flore" bgIcon={SvgLeaf} idBgIcon="svg-leaf" mainImg={ImgSpruce} mainImgPosition={{ maxWidth: '271px', right: '0', bottom: '35px'}} />
-            <NavCard title="Carte" bgIcon={SvgMap} idBgIcon="svg-map" mainImg={ImgWooman} mainImgPosition={{ maxWidth: '476px', left: '-148px', bottom: '0'}} />
+            <Link to="/faune" className="nav-link">
+                <NavCard title={t("wildlife")} bgIcon={SvgBoar} mainImg={ImgMousse} mainImgPosition={{ maxWidth: '358px', left: '-79px', bottom: '0'}} />
+            </Link>
+            <Link to="/flore" className="nav-link">
+                <NavCard title={t("flora")} bgIcon={SvgLeaf} mainImg={ImgSpruce} mainImgPosition={{ maxWidth: '271px', right: '0', bottom: '35px'}} />
+            </Link>
+            <Link to="/carte" className="nav-link">
+                <NavCard title={t("map")} bgIcon={SvgMap} mainImg={ImgWooman} mainImgPosition={{ maxWidth: '476px', left: '-148px', bottom: '0'}} />
+            </Link>
         </main>
         <footer>
             <Navigation display={"none"}/>
