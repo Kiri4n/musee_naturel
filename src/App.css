@@ -17,15 +17,6 @@ main {
   gap: 64px;
   flex-grow: 1;
   align-self: stretch;
-  /*@apply*/
-  /*self-stretch*/
-  /*inline-flex*/
-  /*justify-center*/
-  /*items-center*/
-  /*gap-16*/
-  /*overflow-hidden*/
-  /*h-100*/
-  /*py-6;*/
 }
 
 footer {
@@ -35,4 +26,10 @@ footer {
   justify-center
   items-center
   gap-12;
+}
+
+.nav-link{
+  height: 100%;
+  @apply
+  w-1/3;
 }

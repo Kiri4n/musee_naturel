@@ -2,6 +2,8 @@
 
 .nav-card{
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10), 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset, -2px -2px 8px 0px rgba(0, 0, 0, 0.15) inset;
+    height: 100%;
+    width: 100%;
     @apply
     self-stretch
     p-6
