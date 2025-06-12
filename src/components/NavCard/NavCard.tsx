@@ -3,7 +3,6 @@ import './NavCard.css'
 interface NavCardProps {
     title: string;
     bgIcon: string; // Chemin du fichier SVG (utilisé dans <use href="..." />)
-    idBgIcon: string;
     mainImg: string; // Chemin de l'image principale (PNG, JPG, etc.)
     mainImgPosition: React.CSSProperties; // Chaîne de style CSS inline (ex: 'left: -58px; bottom: 0;')
 }
