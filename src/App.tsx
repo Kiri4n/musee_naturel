@@ -1,11 +1,11 @@
 import './App.css'
 
 import NavCard from "./components/NavCard/NavCard.tsx"
-import SvgBoar from './assets/icons/boar.svg'
+import SvgBoar from './assets/icons/svg-boars.svg'
 import ImgMousse from './assets/img/mousse.png'
-import SvgLeaf from './assets/icons/leaf.svg'
+import SvgLeaf from './assets/icons/svg-leaf.svg'
 import ImgSpruce from './assets/img/AdobeStock_1409870842.png'
-import SvgMap from './assets/icons/map.svg'
+import SvgMap from './assets/icons/svg-map.svg'
 import ImgWooman from './assets/img/AdobeStock_1164303902.png'
 
 import LanguageSelection from "./components/LanguageSelection/LanguageSelection.tsx"
