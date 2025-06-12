@@ -17,9 +17,7 @@ function NavCard(props: NavCardProps) {
                     <span className="title-container__fade-title">{props.title}</span>
                     <h2 className="title-container__title">{props.title}</h2>
                 </div>
-                <svg className="nav-card__bg-icon">
-                    <use href={`${props.bgIcon}#${props.idBgIcon}`}></use>
-                </svg>
+                <img className={"nav-card__bg-icon"} src={props.bgIcon}/>
                 <img className="nav-card__img" src={props.mainImg} alt="image of a mousse" loading="lazy" style={props.mainImgPosition}/>
             </div>
         </>
